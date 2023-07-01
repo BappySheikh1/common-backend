@@ -13,7 +13,7 @@ let server: Server
 
 async function runningServer() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/test')
+    await mongoose.connect(config.database_url as string)
     logger.info('Database connect successfully')
 
     server = app.listen(config.port, () => {
