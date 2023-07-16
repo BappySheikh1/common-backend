@@ -28,13 +28,25 @@ const createBookComment = catchAsync(async (req: Request, res: Response) => {
     data: result,
   })
 })
+const getAllBookComment = catchAsync(async (req: Request, res: Response) => {
+  const bookId = req.params.id
+  console.log(bookId),"service product"
+  const result = await BookService.getAllBookComment(bookId)
+
+  sendResponse<IBook>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book Comment retrieved successfully',
+    data: result,
+  })
+})
 const getLimitBook = catchAsync(async (req: Request, res: Response) => {
   const result = await BookService.getLimitBook()
 
   sendResponse<IBook[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Book get successfully',
+    message: 'Book retrieved  successfully',
     data: result,
   })
 })
@@ -44,7 +56,7 @@ const getAllBook = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IBook[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Book get successfully',
+    message: 'Book retrieved successfully',
     data: result,
   })
 })
@@ -86,6 +98,7 @@ const updateBook = catchAsync(async (req: Request, res: Response) => {
 export const BookController = {
   createBook,
   createBookComment,
+  getAllBookComment,
   getAllBook,
   getLimitBook,
   getSingleBook,

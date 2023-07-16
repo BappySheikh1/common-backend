@@ -30,6 +30,14 @@ const createBookComment = async (
   return book
 }
 
+const getAllBookComment = async (bookId: string): Promise<IBook | null> => {
+  console.log(bookId), 'service product'
+  const result = await Book.findOne(
+    { _id: bookId },
+    { projection: { reviews: 1 } }
+  )
+  return result
+}
 const getAllBook = async (): Promise<IBook[] | null> => {
   const result = await Book.find({})
   return result
@@ -59,6 +67,7 @@ const updateBook = async (
 export const BookService = {
   createBook,
   createBookComment,
+  getAllBookComment,
   getAllBook,
   getLimitBook,
   getSingleBook,
