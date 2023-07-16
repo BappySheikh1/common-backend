@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\successes\\.e32e2bae7913a58ef3981e6e7c250c0a35ec7f24-audit.json",
+    "files": [
+        {
+            "date": 1689438053091,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\successes\\phu-2023-15-07-22-success.lg",
+            "hash": "cc6f7aebb0f1b5f339c187396d4dfb025167c59157be41bf9b4552eec75caa4a"
+        },
+        {
+            "date": 1689444966845,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\successes\\phu-2023-16-07-00-success.lg",
+            "hash": "2237529de20376245406ba03eb835604f4157cc5450d842dbeb0bccf124f4238"
+        },
+        {
+            "date": 1689464345186,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\successes\\phu-2023-16-07-05-success.lg",
+            "hash": "ab1ecec9200dab16c97c529f536193734400540b2bbaefd74f75a65b476e0d3f"
+        }
+    ],
+    "hashType": "sha256"
+}

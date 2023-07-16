@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\errors\\.7ad44df3620700fc97f5975f9aae77724f2f61ad-audit.json",
+    "files": [
+        {
+            "date": 1689438053103,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\errors\\phu-2023-15-07-22-error.log",
+            "hash": "114603cb9251463b1f57e5e5deaa1545f8f174610600f44c9877e95cff8d4d30"
+        },
+        {
+            "date": 1689444966861,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\errors\\phu-2023-16-07-00-error.log",
+            "hash": "6251278e30c327e1d4ecc91b6968cecb73b5072fff697802df83ec04ff779d59"
+        },
+        {
+            "date": 1689464345199,
+            "name": "C:\\Users\\WALTON\\Desktop\\lebel_2_assignment\\book-catalog-backend\\logs\\winston\\errors\\phu-2023-16-07-05-error.log",
+            "hash": "d53913d7dcbab2ccfbf9a98c10740a0f4ba8225dbb91b03fd52b0262b72dc715"
+        }
+    ],
+    "hashType": "sha256"
+}
