@@ -2,6 +2,7 @@
 import { Model } from "mongoose"
 
 export type IBook = {
+  email? : string;
   title: string;
   author: string;
   genre: string;
