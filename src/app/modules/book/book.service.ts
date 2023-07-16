@@ -34,7 +34,7 @@ const getAllBookComment = async (bookId: string): Promise<IBook | null> => {
   console.log(bookId), 'service product'
   const result = await Book.findOne(
     { _id: bookId },
-    { projection: { reviews: 1 } }
+    // { projection: { reviews: 1 } }
   )
   return result
 }
