@@ -16,8 +16,6 @@ const createBookComment = async (
     { $push: { reviews: comment } }
   )
 
-  console.log(result)
-
   if (result.modifiedCount !== 1) {
     console.error('Book not found or comment not added')
     throw new ApiError(
@@ -31,9 +29,8 @@ const createBookComment = async (
 }
 
 const getAllBookComment = async (bookId: string): Promise<IBook | null> => {
-  console.log(bookId), 'service product'
   const result = await Book.findOne(
-    { _id: bookId },
+    { _id: bookId }
     // { projection: { reviews: 1 } }
   )
   return result

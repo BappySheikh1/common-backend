@@ -6,7 +6,6 @@ import catchAsync from '../../../shared/catchAsync'
 import { Request, Response } from 'express'
 
 const createBook = catchAsync(async (req: Request, res: Response) => {
-
   const { ...book } = req.body
   const result = await BookService.createBook(book)
 
@@ -20,8 +19,8 @@ const createBook = catchAsync(async (req: Request, res: Response) => {
 const createBookComment = catchAsync(async (req: Request, res: Response) => {
   const bookId = req.params.id
   const comment = req.body.reviews
-  console.log(bookId,"book id")
-  console.log(comment,"user comment")
+  // console.log(bookId,"book id")
+  // console.log(comment,"user comment")
   const result = await BookService.createBookComment(bookId, comment)
 
   sendResponse<IBook>(res, {
@@ -33,7 +32,7 @@ const createBookComment = catchAsync(async (req: Request, res: Response) => {
 })
 const getAllBookComment = catchAsync(async (req: Request, res: Response) => {
   const bookId = req.params.id
-  console.log(bookId),"service product"
+  // console.log(bookId),"service product"
   const result = await BookService.getAllBookComment(bookId)
 
   sendResponse<IBook>(res, {
@@ -89,6 +88,7 @@ const updateBook = catchAsync(async (req: Request, res: Response) => {
   console.log(req.body)
   const { id } = req.params
   const updateBook = req.body
+  // console.log(updateBook)
   const result = await BookService.updateBook(id, updateBook)
 
   sendResponse<IBook>(res, {
